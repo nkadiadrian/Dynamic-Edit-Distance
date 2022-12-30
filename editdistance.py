@@ -45,12 +45,12 @@ def edit_dyn(above, below):
             n -= 1
             if a[m][n] == 1:
                 distance += 1
-        if a[m][n] == 2:
+        elif a[m][n] == 2:
             b += "-"
             c += below[n - 1]
             n -= 1
             distance += 1
-        if a[m][n] == 3:
+        elif a[m][n] == 3:
             b += above[m-1]
             c += "-"
             m -= 1
